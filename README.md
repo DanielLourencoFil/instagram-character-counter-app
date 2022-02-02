@@ -16,6 +16,6 @@ Main Features
 
 ## View app
 
-[Visit the project](https://instagram-character-counter-app-my-projects.netlify.app/)
+[Visit the project](https://instagram-character-counter-app.netlify.app/)
 
 Thanks to visiting me and good coding!
