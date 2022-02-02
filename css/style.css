@@ -96,6 +96,12 @@ body {
 	gap: 1rem;
 }
 
+.counter-title {
+	font-family: var(--font-primary);
+	font-size: 3rem;
+	color: var(--color-primary-500);
+	margin-bottom: 1.5rem;
+}
 /* ---- main displayer ---- */
 
 .characters-total {
