@@ -1,9 +1,11 @@
 /* ======= FONTS  =======*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Roboto:wght@300;400&display=swap");
 
 /* ======= VARIABLES  =======*/
 :root {
 	--font-primary: "Roboto", sans-serif;
+	--font-secondary: "Libre Baskerville", serif;
 	--color-primary-100: rgb(216, 216, 216);
 	--color-primary-300: rgb(153, 153, 153);
 	--color-primary-500: rgb(71, 70, 70);
@@ -17,6 +19,7 @@
 	--transition-500: all 0.3s linear;
 	--border-radius-500: 0.35rem;
 	--letter-spacing-100: 1px;
+	--letter-spacing-300: 3px;
 }
 /* ======= GENERAL  =======*/
 * {
@@ -54,7 +57,7 @@ body {
 }
 .logo {
 	height: inherit;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	text-shadow: var(--text-shadow-500);
 }
 
@@ -135,30 +138,32 @@ body {
 
 /* ---- text area for typing ---- */
 .text-area {
+	font-family: var(--font-secondary);
 	width: 100%;
 	border-radius: var(--border-radius-500);
 	border: 2px solid var(--color-primary-300);
-	font-size: 1rem;
+	font-size: 1.25rem;
 	padding: 0.5rem;
+	letter-spacing: var(--letter-spacing-300);
 }
 .text-area::-webkit-input-placeholder {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: var(--color-primary-300);
 }
 .text-area::-moz-placeholder {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: var(--color-primary-300);
 }
 .text-area:-ms-input-placeholder {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: var(--color-primary-300);
 }
 .text-area::-ms-input-placeholder {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: var(--color-primary-300);
 }
 .text-area::placeholder {
-	font-size: 1rem;
+	font-size: 1.25rem;
 	color: var(--color-primary-300);
 }
 /* ---- text area btns ---- */
