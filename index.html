@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Character Counter</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/brands.min.css" />
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+    <div class="nav-wrapper">
+        <span class="logo">CodeErgoSum</span>
+        <div class="social-icons">
+            <a href="https://github.com/DanielLourencoFil/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-louren%C3%A7o-dev/"  target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- instagram counter -->
+    <main class="counter-wrapper">
+        <!-- title -->
+        <h1 class="counter-title">Instagram Character Counter</h1>
+
+        <!-- main displayer : total characters counter -->
+        <div class="characters-total">
+            <div class="characters-wrapper">
+                <p class="characters-title">typed</p> 
+                <p class="characters-typed" id="total">0</p>
+            </div>
+            <div class="characters-wrapper">
+                <p class="characters-title">remaining</p> 
+                <p class="characters-typed" id="remaining">2200</p>
+            </div>
+        </div>
+        <!-- end of main displayer : total characters counter -->
+
+        <!-- text area for typing -->
+        <textarea class="text-area" id="text-area" rows="20" placeholder="Type here to check the character count! "></textarea>
+        <div class="counter-btns">
+            <button class="counter-btn copy-btn">Copy</button>
+            <button class="counter-btn clear-btn">Clear</button>
+        </div>
+        <!-- end of text area for typing -->
+
+        <!-- secondary displayers -->
+        <div class="single-counters-wrapper">
+            <!-- first column -->
+            <section class="single-counters-column">
+                <p class="single-counter" >Direct: <span id="direct">0 / 1000</span></p>
+    
+                <p class="single-counter" >Caption Truncation: <span id="caption-truncation">0 / 125</span></p>
+    
+                <p class="single-counter" >Hashtags: <span id="hashtags">0 /30</span></p>
+            </section>
+
+            <!-- second column -->
+            <section class="single-counters-column">
+            <p class="single-counter" >Bio: <span id="bio">0 / 150</span></p>
+
+            <p class="single-counter" >Username: <span id="username">0 /30</span></p>
+
+            <p class="single-counter" >Profile Name: <span id="profile-name">0 /30</span></p>
+        </section>
+        </div>    
+        <!-- end of secondary displayers -->
+    </main>
+    <!-- end of instagram counter -->
+
+
+<!--    ABOUT SECTION MODAL -->
+<section class="about-modal">
+    <i class="fas fa-times about-btn about-modal-close-btn"></i>
+    
+    <div class="about-wrapper">
+    <article class="about-text-wrapper">
+        <h1 class="about-title">Welcome to my Instagram character counter!</h1>
+        <p class="about-text">Just copy and paste or type your text into the text box below and watch as the character counts update in real-time!</p>
+        <p class="about-text">For making things a little more convenient and quick, you can click the "green"
+        button to copy the text over to Instagram when you're done. Or you can just
+        click the "red" one to delete your text and start over if you want.</p>
+        <p class="about-text">I hope you enjoy my Instagram caption limit checker!</p>
+    </article>
+    
+    <article class="metrics-wrapper">
+        <h1 class="metrics-general-title">Different metrics explained</h1>
+        
+       <!-- text metrics injected by javascript -->
+
+    </article>
+    </div>
+</section>
+<!-- end of ABOUT SECTION MODAL -->
+
+<!-- footer -->
+    <div class="footer">
+        <p>copyright &copy;: <span id="current-year"></span>  - CodeErgoSum</p>
+    </div>
+<!-- end of footer -->
+   <script src="./src/app.js" type="module"></script>
+</body>
+</html>
