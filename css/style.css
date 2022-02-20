@@ -101,7 +101,7 @@ body {
 
 .counter-title {
 	font-family: var(--font-primary);
-	font-size: 3rem;
+	font-size: clamp(1.725rem, 7vw, 3rem);
 	color: var(--color-primary-500);
 	margin-bottom: 1.5rem;
 }
@@ -118,6 +118,8 @@ body {
 .characters-wrapper {
 	width: 50%;
 	font-size: 1.35rem;
+	font-size: clamp(0.875rem, 5vw, 1.725rem);
+
 	text-align: center;
 	text-transform: uppercase;
 	display: flex;
