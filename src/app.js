@@ -3,7 +3,7 @@ import {copyClipBoard} from "./copyClipBoard.js";
 import {TextCalc} from "./TextCalc.js"
 import { renderRemainingTextCalc, alertRemainingTextMaxLimit } from "./renderRemainingTextCalc.js";
 //-----About modal
-import { createAboutBtn, toggleAboutModal } from "./aboutPage/aboutPage.js";
+import { createAboutBtn,ToggleModal } from "./aboutPage/aboutPage.js";
 import { showMetricsTextInfo } from "./aboutPage/showMetricsTextInfo.js";
 import { htmlDataText } from "./aboutPage/htmlDataText.js";
 import { renderABoutMetricText } from "./aboutPage/renderAboutMetricText.js";
@@ -107,7 +107,7 @@ renderABoutMetricText(htmlDataText)
 
 // ==== create "?" info btn and add toggle function to it
 const navbar = document.querySelector('.navbar')
-    createAboutBtn(navbar, toggleAboutModal)
+    createAboutBtn(navbar)
 
 // ==== show metric info by clicking on plus icon
     showMetricsTextInfo()
@@ -118,4 +118,9 @@ const navbar = document.querySelector('.navbar')
 const currentYearDisplayer = document.querySelector('#current-year')
 currentYearDisplayer.textContent = currentYear();
 
+
+// const testModal = new ToggleModal('about-modal', 'about-modal-close-btn') 
+
+// testModal.open();
+// console.log(testModal.modal, testModal.modalBtn);
 
