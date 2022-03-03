@@ -1,5 +1,6 @@
 export function showMetricsTextInfo(){
-    const metricsBtns = document.querySelectorAll('.metric-plus-btn i')
+    // const metricsBtns = document.querySelectorAll('.metric-plus-btn i')
+    const metricsBtns = document.querySelectorAll('.metric-plus-btn')
     const metricsText = document.querySelectorAll('.metric-text')
 
     metricsBtns.forEach((btn, index) =>{

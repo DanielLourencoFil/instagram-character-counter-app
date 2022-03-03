@@ -119,4 +119,3 @@ const currentYearDisplayer = document.querySelector('#current-year')
 currentYearDisplayer.textContent = currentYear();
 
 
-
